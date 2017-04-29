@@ -1,0 +1,188 @@
+{
+	"_id" : ObjectId("58c10ab93148c814c8550d72"),
+	"BillDate" : "2017-08-07",
+	"Total" : 20000,
+	"Deduction" : 100,
+	"Final" : 19900,
+	"Notes" : "Beauty Products Bill",
+	"Products" : [
+		{
+			"_id" : "58c108483148c814c8550d6e",
+			"barcode" : "56465321435",
+			"name" : "Blusher",
+			"category" : "Beauty Products",
+			"description" : "Top notch blusher",
+			"id" : "zwXpMpODB0FGr9GnXrC79pRGk9rWBnov",
+			"Quantity" : "100",
+			"BuyPrice" : "50",
+			"SellPrice" : "70",
+			"TotalPrice" : 5000
+		},
+		{
+			"_id" : "58c108c13148c814c8550d6f",
+			"barcode" : "53453465",
+			"name" : "Lipsticks",
+			"category" : "Beauty Products",
+			"description" : "Lipsticks for women",
+			"id" : "vrAhUltDIzbIe25hPpsLQKSL2teR04Sg",
+			"Quantity" : "200",
+			"BuyPrice" : "75",
+			"SellPrice" : "100",
+			"TotalPrice" : 15000
+		}
+	],
+	"id" : "zX7FYfRUqT6BhI3vTbEaJeNAOUzI4qE9"
+},
+{
+	"_id" : ObjectId("58c10b2f3148c814c8550d73"),
+	"BillDate" : "2008-01-05",
+	"Total" : 18000,
+	"Deduction" : 300,
+	"Final" : 17700,
+	"Notes" : "Buying Some FoodSupplements",
+	"Products" : [
+		{
+			"_id" : "58c1055e3148c814c8550d62",
+			"barcode" : "654646545",
+			"name" : "Fitness",
+			"category" : "Food Supplements",
+			"description" : "Wheat Food Supplement",
+			"id" : "kaGKfhktGgAS1ojqsJKVKhyWnccIIQq6",
+			"Quantity" : "40",
+			"BuyPrice" : "100",
+			"SellPrice" : "150",
+			"TotalPrice" : 4000
+		},
+		{
+			"_id" : "58c105a63148c814c8550d64",
+			"barcode" : "564654654653",
+			"name" : "Compelete",
+			"category" : "Food Supplements",
+			"description" : "Compelete Food Supplemet",
+			"id" : "hw0poMKLFvHtCWWw6jLvuacD2Ntixs46",
+			"Quantity" : "70",
+			"BuyPrice" : "200",
+			"SellPrice" : "250",
+			"TotalPrice" : 14000
+		}
+	],
+	"id" : "iIN6iarH4jz0dK0Yc3cMV50IpDAuTiYc"
+},
+{
+	"_id" : ObjectId("58c10c533148c814c8550d74"),
+	"BillDate" : "2004-05-04",
+	"Total" : 367500,
+	"Deduction" : 4000,
+	"Final" : 363500,
+	"Notes" : "buying some Electronic Products",
+	"Products" : [
+		{
+			"_id" : "58c1057f3148c814c8550d63",
+			"barcode" : "54654651313",
+			"name" : "iPhone",
+			"category" : "Electronics",
+			"description" : "Apple's best product",
+			"id" : "YteEG17HmI5D8Dd4DFnfzkk27vLQ8ADf",
+			"Quantity" : "48",
+			"BuyPrice" : "5000",
+			"SellPrice" : "6500",
+			"TotalPrice" : 240000
+		},
+		{
+			"_id" : "58c105da3148c814c8550d65",
+			"barcode" : "564653135",
+			"name" : "Old Camera",
+			"category" : "Electronics",
+			"description" : "Camera for instanst use",
+			"id" : "MvjOrgsBwAj3E4JcqaYpMS1KysdkN4WV",
+			"Quantity" : "70",
+			"BuyPrice" : "650",
+			"SellPrice" : "800",
+			"TotalPrice" : 45500
+		},
+		{
+			"_id" : "58c106033148c814c8550d66",
+			"barcode" : "6546543654",
+			"name" : "Old Calculator",
+			"category" : "Electronics",
+			"description" : "Calculator for calculating numbers",
+			"id" : "gwpH3xnasup1mv8DJWeNiljlWBZWImzr",
+			"Quantity" : "200",
+			"BuyPrice" : "40",
+			"SellPrice" : "50",
+			"TotalPrice" : 8000
+		},
+		{
+			"_id" : "58c1062c3148c814c8550d67",
+			"barcode" : "545654316",
+			"name" : "Hp Laptop",
+			"category" : "Electronics",
+			"description" : "Hp's Best Laptop",
+			"id" : "ahg04w1aqXnhgMMd6G2UHiFVAK1s4KeI",
+			"Quantity" : "12",
+			"BuyPrice" : "4500",
+			"SellPrice" : "6000",
+			"TotalPrice" : 54000
+		},
+		{
+			"_id" : "58c1066a3148c814c8550d69",
+			"barcode" : "5645465465",
+			"name" : "VR",
+			"category" : "Electronics",
+			"description" : "Virtual Reality Glass for seeing everything",
+			"id" : "bWWsOjSqurb1psEE2j4tOqhDEzLWyD8Y",
+			"Quantity" : "25",
+			"BuyPrice" : "800",
+			"SellPrice" : "1200",
+			"TotalPrice" : 20000
+		}
+	],
+	"id" : "TcSxkNufdI3twyIwzUMbPwo7ifeNkCXH"
+},
+{
+	"_id" : ObjectId("58c10cca3148c814c8550d75"),
+	"BillDate" : "2018-12-03",
+	"Total" : 36500,
+	"Deduction" : 200,
+	"Final" : 36300,
+	"Notes" : "some food is bought",
+	"Products" : [
+		{
+			"_id" : "58c104fc3148c814c8550d60",
+			"barcode" : "56498479874874",
+			"name" : "M&MS",
+			"category" : "Food",
+			"description" : "ChokoPon",
+			"id" : "WrNc9WMM5iLNsyk1kIOvRDXhRZTb1hls",
+			"Quantity" : "200",
+			"BuyPrice" : "30",
+			"SellPrice" : "45",
+			"TotalPrice" : 6000
+		},
+		{
+			"_id" : "58c1051c3148c814c8550d61",
+			"barcode" : "7898465465",
+			"name" : "Vegetables",
+			"category" : "Food",
+			"description" : "",
+			"id" : "pMdf7iokOpGaQKwOKlgV5nJKVE4oVvmR",
+			"Quantity" : "400",
+			"BuyPrice" : "20",
+			"SellPrice" : "30",
+			"TotalPrice" : 8000
+		},
+		{
+			"_id" : "58c106473148c814c8550d68",
+			"barcode" : "5465346534",
+			"name" : "Nutella",
+			"category" : "Food",
+			"description" : "the best chocolate ever",
+			"id" : "2eMPTggbQYWgKrrj2CbYPBc8yWh4obty",
+			"Quantity" : "450",
+			"BuyPrice" : "50",
+			"SellPrice" : "70",
+			"TotalPrice" : 22500
+		}
+	],
+	"id" : "fVJDVWKcgN3cxZdkW48pHvmZ8MberJip"
+},

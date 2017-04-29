@@ -1,0 +1,36 @@
+﻿<html lang="en" ng-app="SmartManager">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Smart Manager Login</title>
+    <link href="Resources/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Resources/Login/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="Resources/Login/signin.css" rel="stylesheet">
+    <script src="Resources/Login/ie-emulation-modes-warning.js.download"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/login" method="post" class="form-signin">
+            <h2 class="form-signin-heading">Please Login</h2>
+            <label for="inputEmail" class="sr-only">Email Address / UserName</label>
+            <input id="inputEmail" class="form-control" placeholder="Email Address / UserName" required="" autofocus="" name="username">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" name="password">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me" name="remmber"> Remember Me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        </form>
+    </div>
+    <script src="Resources/Login/ie10-viewport-bug-workaround.js.download"></script>
+</body>
+
+</html>

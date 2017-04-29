@@ -1,0 +1,40 @@
+<section class="content-header">
+    <h1>Selling Bills Page</h1>
+</section>
+<section class="content">
+    <a class="btn btn-primary" href="#AddSellingBill">Add New Selling Bills</a>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Selling Bills Data</h3>
+                </div>
+                <div class="box-body">
+                    <table id="SellingBills" class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-ng-click="ordering('BillDate')">BillDate</th>
+                                <th class="sortable" data-ng-click="ordering('Total')">Total</th>
+                                <th class="sortable" data-ng-click="ordering('Deduction')">Deduction</th>
+                                <th class="sortable" data-ng-click="ordering('Final')">FinallPrice</th>
+                                <th class="sortable" data-ng-click="ordering('Notes')">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="Bill in SellingBills">
+                                <td>{{Bill.BillDate}}</td>
+                                <td>{{Bill.Total}}</td>
+                                <td>{{Bill.Deduction}}</td>
+                                <td>{{Bill.Final}}</td>
+                                <td>{{Bill.Notes}}</td>
+                              
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

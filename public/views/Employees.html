@@ -1,0 +1,52 @@
+<section class="content-header">
+    <h1>Employees Page</h1>
+</section>
+<section class="content">
+    <a class="btn btn-primary" href="#AddEmployees">Add New Employee</a>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Employees Data</h3>
+                </div>
+                <div class="box-body">
+                    <table id="Employees" class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-ng-click="ordering('Image')">Image</th>
+                                <th class="sortable" data-ng-click="ordering('Name')">Name</th>
+                                <th class="sortable" data-ng-click="ordering('Phone')">Phone</th>
+                                <th class="sortable" data-ng-click="ordering('Job')">Job</th>
+                                <th class="sortable" data-ng-click="ordering('Address')">Address</th>
+                                <th class="sortable" data-ng-click="ordering('Salary')">Salary</th>
+                                <th class="sortable" data-ng-click="ordering('Email')">Email</th>
+                                <th class="sortable" data-ng-click="ordering('HireDate')">HireDate</th>
+                                <th class="sortable" data-ng-click="ordering('Notes')">Notes</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="Employee in MyEmployees">
+                                <td><img src="/images/emps/{{Employee.id}}.jpeg" width="50" height="50"></td>
+                                <td>{{Employee.Name}}</td>
+                                <td>{{Employee.Phone}}</td>
+                                <td>{{Employee.Job}}</td>
+                                <td>{{Employee.Address}}</td>
+                                <td>{{Employee.Salary}}</td>
+                                <td>{{Employee.Email}}</td>
+                                <td>{{Employee.HireDate}}</td>
+                                <td>{{Employee.Notes}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-block btn-success" value="{{Employee.id}}" ng-click="updateEmployee(Employee.id)" href="#UpdateEmployees">Update</button>
+                                    <button type="button" class="btn btn-block btn-danger" value="{{Employee.id}}" ng-click="deleteEmployee(Employee.id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

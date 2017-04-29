@@ -1,0 +1,93 @@
+﻿<section class="content-header">
+    <h1>Create Users Page</h1>
+</section>
+<section class="content">
+    <form method="post" class="form-horizontal" action="/updateUser">
+        <div class="form-group">
+            <label for="inputUserName" class="col-sm-2 control-label">UserName</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputUserName" placeholder="UserName" value="{{CurrentUser.username}}" name="username">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email Address</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" value="{{CurrentUser.email}}" name="email" id="inputEmail" placeholder="Email Address">
+            </div>
+        </div>
+                        <input type="hidden" value="{{CurrentUser.id}}" name="id"/> 
+
+        <div class="form-group">
+            <label for="inputFullName" class="col-sm-2 control-label">FullName</label>
+            <div class="col-sm-10">
+                <select id="inputFullName" class="form-control select2" style="width: 100%;" value="{{CurrentUser.empName}}" name="empName">
+                    <option ng-repeat="Employee in Employees">{{Employee.Name}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password"  value="{{CurrentUser.password}}" name="password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Preveilages" class="col-sm-2 control-label">Preveilages</label>
+            <div class="col-sm-10" id="Preveilages">
+                
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputproducts" placeholder="Products" value="{{CurrentUser.products}}" name="products"> Products
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputcategories" placeholder="Categories" value="{{CurrentUser.categories}}" name="categories"> Categories
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputemployees" placeholder="Employees" value="{{CurrentUser.employees}}" name="employees"> Employees
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputusers" placeholder="Users" value="{{CurrentUser.users}}" name="users"> Users
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputsellingBills" placeholder="SellingBills" value="{{CurrentUser.sellingBills}}" name="sellingBills"> SellingBills
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputbuyingBills" placeholder="BuyingBills" value="{{CurrentUser.buyingBills}}" name="buyingBills"> BuyingBills
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputNotes" class="col-sm-2 control-label">Notes</label>
+            <div class="col-sm-10" id="inputNotes">
+                <input type="text" class="form-control" id="inputNotes" value="{{CurrentUser.notes}}" name="notes" placeholder="Notes">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-11">
+                <button type="submit"  class="btn btn-primary">Update User</button>
+            </div>
+        </div>
+    </form>
+
+</section>

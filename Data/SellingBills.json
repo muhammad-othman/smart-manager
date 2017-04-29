@@ -1,0 +1,78 @@
+{
+	"_id" : ObjectId("58c10d5e3148c814c8550d76"),
+	"BillDate" : "2017-01-03",
+	"Total" : 435,
+	"Deduction" : 0,
+	"Final" : 435,
+	"Notes" : "selling some candies for childern",
+	"Products" : [
+		{
+			"_id" : "58c106473148c814c8550d68",
+			"barcode" : "5465346534",
+			"name" : "Nutella",
+			"category" : "Food",
+			"description" : "the best chocolate ever",
+			"id" : "2eMPTggbQYWgKrrj2CbYPBc8yWh4obty",
+			"inStock" : 450,
+			"sellPrice" : "70",
+			"buyPrice" : "50",
+			"SellPrice" : 70,
+			"Quantity" : 3,
+			"TotalPrice" : 210
+		},
+		{
+			"_id" : "58c104fc3148c814c8550d60",
+			"barcode" : "56498479874874",
+			"name" : "M&MS",
+			"category" : "Food",
+			"description" : "ChokoPon",
+			"id" : "WrNc9WMM5iLNsyk1kIOvRDXhRZTb1hls",
+			"inStock" : 200,
+			"sellPrice" : "45",
+			"buyPrice" : "30",
+			"SellPrice" : 45,
+			"Quantity" : 5,
+			"TotalPrice" : 225
+		}
+	],
+	"id" : "w35T7NzC2qC3VDmXaG5vEHrW0eIbv8Em"
+},
+{
+	"_id" : ObjectId("58c10eef3148c814c8550d77"),
+	"BillDate" : "2017-12-06",
+	"Total" : 158500,
+	"Deduction" : 1500,
+	"Final" : 157000,
+	"Notes" : "Selling some Phones and Laptops",
+	"Products" : [
+		{
+			"_id" : "58c1057f3148c814c8550d63",
+			"barcode" : "54654651313",
+			"name" : "iPhone",
+			"category" : "Electronics",
+			"description" : "Apple's best product",
+			"id" : "YteEG17HmI5D8Dd4DFnfzkk27vLQ8ADf",
+			"inStock" : 48,
+			"sellPrice" : "6500",
+			"buyPrice" : "5000",
+			"SellPrice" : 6500,
+			"Quantity" : 17,
+			"TotalPrice" : 110500
+		},
+		{
+			"_id" : "58c1062c3148c814c8550d67",
+			"barcode" : "545654316",
+			"name" : "Hp Laptop",
+			"category" : "Electronics",
+			"description" : "Hp's Best Laptop",
+			"id" : "ahg04w1aqXnhgMMd6G2UHiFVAK1s4KeI",
+			"inStock" : 12,
+			"sellPrice" : "6000",
+			"buyPrice" : "4500",
+			"SellPrice" : 6000,
+			"Quantity" : 8,
+			"TotalPrice" : 48000
+		}
+	],
+	"id" : "CgKqzgdtRPC2j0ItW4AIGpT8PsokxWgC"
+},

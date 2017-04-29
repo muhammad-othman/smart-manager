@@ -1,0 +1,43 @@
+<section class="content-header">
+    <h1>Users Page</h1>
+</section>
+<section class="content">
+    <a class="btn btn-primary"  href="#AddUsers">Create New User</a>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Users Data</h3>
+                </div>
+                <div class="box-body">
+                    <table id="Users" class="table table-condensed table-hover">
+                        <thead>                         
+                            <tr>
+                                <th class="sortable" data-ng-click="ordering('username')">User Name</th>
+                                <th class="sortable" data-ng-click="ordering('email')">Email Address</th>
+                                <th class="sortable" data-ng-click="ordering('empName')">Employee Name</th>
+                                <th class="sortable" data-ng-click="ordering('notes')">Notes</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="User in Users">
+                                <td>{{User.username}}</td>
+                                <td>{{User.email}}</td>
+                                <td>{{User.empName}}</td>                            
+                                <td>{{User.notes}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-block btn-success" ng-click="updateUser(User.id)">Update</button>
+                                    <button type="button" class="btn btn-block btn-danger" ng-click="deleteUser(User.id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

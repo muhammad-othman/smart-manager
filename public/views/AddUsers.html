@@ -1,0 +1,95 @@
+﻿<section class="content-header">
+    <h1>Create Users Page</h1>
+</section>
+<section class="content">
+    <form method="post" class="form-horizontal" action="/newUser">
+        <div class="form-group">
+            <label for="inputUserName" class="col-sm-2 control-label">UserName</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputUserName" placeholder="UserName" name="username">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email Address</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email Address">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputFullName" class="col-sm-2 control-label">FullName</label>
+            <div class="col-sm-10">
+                <select id="inputFullName" class="form-control select2" style="width: 100%;" name="empName">
+                    <option ng-repeat="Employee in Employees">{{Employee.Name}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password"  name="password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Preveilages" class="col-sm-2 control-label">Preveilages</label>
+            <div class="col-sm-10" id="Preveilages">
+                
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputproducts" placeholder="Products" name="products"> Products
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputcategories" placeholder="Categories" name="categories"> Categories
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputemployees" placeholder="Employees" name="employees"> Employees
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputusers" placeholder="Users" name="users"> Users
+                    </label>
+                </div>
+
+                
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputsellingBills" placeholder="SellingBills" name="sellingBills"> SellingBills
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="inputbuyingBills" placeholder="BuyingBills" name="buyingBills"> BuyingBills
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputNotes" class="col-sm-2 control-label">Notes</label>
+            <div class="col-sm-10" id="inputNotes">
+                <input type="text" class="form-control" id="inputNotes" name="notes" placeholder="Notes">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-11">
+                <button type="submit"  class="btn btn-primary">Add User</button>
+            </div>
+        </div>
+    </form>
+
+</section>

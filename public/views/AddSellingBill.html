@@ -1,0 +1,122 @@
+﻿<section class="content-header">
+    <h1>Add Selling Bill Page</h1>
+</section>
+<section class="content">
+    <div class="col-sm-12">
+        <div class="col-sm-6">
+            <form method="get"  class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputBillDate" class="col-sm-2 control-label">Bill Date</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="inputBillDate" placeholder="Bill Date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputDeduction" class="col-sm-2 control-label">Total</label>
+                    <div class="col-sm-10">
+                        <input type="number" ng-model="TotalPrice" class="form-control" id="inputTotal" placeholder="Total" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputDeduction" class="col-sm-2 control-label">Deduction</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" ng-model="Deduction" id="inputDeduction" placeholder="Deduction"           ng-change="updateFinalPrice()">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputFinallPrice" class="col-sm-2 control-label">FinalPrice</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" ng-model="FinalPrice"  id="inputFinalPrice" placeholder="FinalPrice" readonly >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputNotes" class="col-sm-2 control-label">Notes</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputNotes" placeholder="Notes">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1">
+                        <button type="button" class="btn btn-primary" ng-click="SaveBill()">Save Bill</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <form method="get" class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputCategory" class="col-sm-2 control-label">Category</label>
+                    <div class="col-sm-10">
+                        <select id="inputCategory" class="form-control select2" style="width: 100%;" name="category" 
+                        ng-model="SelectedCategory" ng-change="categoryChanged(SelectedCategory)">
+                            <option ng-repeat="Category in MyCategories">{{Category.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputProductName" class="col-sm-2 control-label">Product Name</label>
+                    <div class="col-sm-10">
+                       <select id="inputProduct" class="form-control select2" style="width: 100%;" name="product" 
+                        ng-model="SelectedProduct" ng-change="productChanged(SelectedProduct)">
+                            <option ng-repeat="Product in MyProducts">{{Product.name}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputQuantity" class="col-sm-2 control-label">Quantity</label>
+                    <div class="col-sm-10">
+                        <input type="number" ng-model="Product.Quantity" class="form-control" id="inputQuantity" placeholder="Product Quantity">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSellingPrice" class="col-sm-2 control-label">Sell Price</label>
+                    <div class="col-sm-10">
+                        <input type="number" ng-model="Product.SellPrice" class="form-control" id="inputSellPrice" placeholder="Selling Price" readonly>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-1">
+                        <button type="button" class="btn btn-primary" ng-click="AddSellingBillsProduct()">Add Product</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Bill Products Data</h3>
+                </div>
+                <div class="box-body">
+                    <table id="SellingBillsProducts" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Selling Price</th>
+                                <th>Quantity</th>
+                                <th>TotalSellingPrice</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="Product in SellingBillsProducts">
+                                <td><img src="/images/products/{{Product.id}}.jpeg" width="50" height="50"></td>
+                                <td>{{Product.name}}</td>
+                                <td>{{Product.category}}</td>
+                                <td>{{Product.SellPrice}}</td>
+                                <td>{{Product.Quantity}}</td>
+                                <td>{{Product.TotalPrice}}</td>
+                                <td>
+                                    <button type="button" class="btn btn-block btn-danger" ng-click="RemoveSellingBillsProduct(Product.Barcode)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

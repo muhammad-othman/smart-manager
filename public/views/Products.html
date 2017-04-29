@@ -1,0 +1,51 @@
+<section class="content-header">
+    <h1>Products Page</h1>
+</section>
+<section class="content">
+    </div>
+    <a type="button" class="btn btn-primary" href="#AddProducts">Add New Product</a>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Products Data</h3>
+                </div>
+                <div class="box-body">
+                    <table id="Products" class="table table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th class="sortable" data-ng-click="ordering('barcode')">Barcode</th>
+                                <th class="sortable" data-ng-click="ordering('name')">Name</th>
+                                <th class="sortable" data-ng-click="ordering('category')">Category</th>
+                                <th class="sortable" data-ng-click="ordering('sellPrice')">SellingPrice</th>
+                                <th class="sortable" data-ng-click="ordering('buyPrice')">BuyingPrice</th>
+                                <th class="sortable" data-ng-click="ordering('inStock')">Available InStock</th>
+                                <th class="sortable" data-ng-click="ordering('description')">Description</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="Product in MyProducts">
+                                <td><img src="/images/products/{{Product.id}}.jpeg" width="50" height="50"></td>
+                                <td>{{Product.barcode}}</td>
+                                <td>{{Product.name}}</td>
+                                <td>{{Product.category}}</td>
+                                <td>{{Product.sellPrice}}</td>
+                                <td>{{Product.buyPrice}}</td>
+                                <td>{{Product.inStock}}</td>
+                                <td>{{Product.description}}</td>
+                                <td>
+                                    <button type="button" ng-click="updateProduct(Product.id)" class="btn btn-block btn-success" value="{{Product.Barcode}}">Update</button>
+                                    <button type="button" ng-click="deleteProduct(Product.id)" class="btn btn-block btn-danger" value="{{Product.Barcode}}">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

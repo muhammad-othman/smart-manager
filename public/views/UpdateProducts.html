@@ -1,0 +1,96 @@
+<section class="content-header">
+    <h1>Add Product Page</h1>
+</section>
+<section class="content">
+    <form method="post" class="form-horizontal" action="/updateProduct" enctype="multipart/form-data">
+    
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Image</label>
+            <div class="col-sm-10">
+                <img id="img-upload" src="/images/products/{{CurrentProduct.id}}.jpeg" />
+                <br>
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-default btn-file glyphicon glyphicon-upload">
+                            Upload
+                            <input type="file" id="imgInp"   name="image"/>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="inputBarcode" class="col-sm-2 control-label">Barcode</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="inputBarcode" placeholder="Barcode" value="{{CurrentProduct.barcode}}"  name="barcode">
+            </div>
+        </div>
+                <input type="hidden" name="id" value="{{CurrentProduct.id}}">
+        <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName"  placeholder="Product Name" value="{{CurrentProduct.name}}"  name="name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputCategory" class="col-sm-2 control-label">Category</label>
+            <div class="col-sm-10">
+            <select id="inputCategory" class="form-control select2" style="width: 100%;" value="{{CurrentProduct.category}}"  name="category">
+                    <option ng-repeat="Category in MyCategories">{{Category.name}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputDescription" class="col-sm-2 control-label">Description</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputDescription" placeholder="Description" value="{{CurrentProduct.description}}"  name="description">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-11">
+                <button type="submit" class="btn btn-primary">Update Product</button>
+            </div>
+        </div>
+
+    </form>
+
+</section>
+
+<script>
+    $(document).ready(function () {
+        $(document).on('change', '.btn-file :file', function () {
+            var input = $(this),
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger('fileselect', [label]);
+        });
+        $('.btn-file :file').on('fileselect', function (event, label) {
+            var input = $(this).parents('.input-group').find(':text'),
+                log = label;
+            if (input.length) {
+                input.val(log);
+            }
+
+        });
+
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img-upload').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#imgInp").change(function () {
+            readURL(this);
+        });
+    });
+</script>

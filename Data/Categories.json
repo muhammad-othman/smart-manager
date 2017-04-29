@@ -1,0 +1,24 @@
+{
+	"_id" : ObjectId("58c103fa3148c814c8550d5c"),
+	"name" : "Beauty Products",
+	"description" : "Beauty Products for women",
+	"id" : "iOyL9EihYd6Fd0fZQZQIFJrmBpQhSkpm"
+},
+{
+	"_id" : ObjectId("58c1046f3148c814c8550d5d"),
+	"name" : "Food Supplements",
+	"description" : "some stuff for helping body building guys",
+	"id" : "t8ZGFFRRsuthryhcGUNSsdGo94Tlqw4X"
+},
+{
+	"_id" : ObjectId("58c104993148c814c8550d5e"),
+	"name" : "Electronics",
+	"description" : "Electronics products",
+	"id" : "TSpXq429OCCUaFm702Dfpm5Ga2fWQ4RF"
+},
+{
+	"_id" : ObjectId("58c104ba3148c814c8550d5f"),
+	"name" : "Food",
+	"description" : "stuff that is being eaten",
+	"id" : "NjIdbWx48l95Pdkn9m5ncp11jHIg5Wy5"
+},

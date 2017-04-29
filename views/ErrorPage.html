@@ -1,0 +1,50 @@
+﻿<html lang="en" ng-app="SmartManager">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <title>Smart Manager Login</title>
+    <link href="Resources/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Resources/Login/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="Resources/Login/signin.css" rel="stylesheet">
+    <script src="Resources/Login/ie-emulation-modes-warning.js.download"></script>
+     <style>
+        img{
+            width: 15%;
+            height: 15%;
+        }
+       .img-responsive {
+    margin: 0 auto;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="content">
+    <div class="error-page text-center">
+        <br />
+        <br />
+        <div class="error-content">
+                <img class="img-responsive" src="/images/error.png" />
+
+            <h3><i class="fa fa-warning text-yellow"></i><%= ErrorMessage%>.</h3>
+
+            <p>
+                <%= ErrorText%><br><br><br><br> 
+                You May Need To Return To The  <a href="/">Home Page</a>
+            </p>
+
+        </div>
+    </div>
+</section>
+    </div>
+    <script src="Resources/Login/ie10-viewport-bug-workaround.js.download"></script>
+</body>
+
+</html>
