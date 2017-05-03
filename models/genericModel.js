@@ -1,6 +1,6 @@
 var mongo = require("mongodb");
 var randomstring = require("randomstring");
-var url = "mongodb://127.0.0.1:27017/PointOfSaleDB"
+var url = "mongodb://admin:admin91@ds131041.mlab.com:31041/smartmanager"
 
 
 var MongoClient = mongo.MongoClient;
