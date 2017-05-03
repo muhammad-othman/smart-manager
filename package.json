@@ -1,6 +1,6 @@
 {
   "name": "smart_manager",
- "scripts": { "start" : "bar ./test" },
+ "scripts": { "start" : "node app.js" },
   "version": "0.0.0",
   "private": true,
   "scripts": {
