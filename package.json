@@ -1,17 +1,17 @@
 {
   "name": "smart_manager",
- "scripts": { "start" : "node app.js" },
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "start": "node app.js"
   },
+  "private": true,
   "dependencies": {
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",
     "ejs": "~2.5.5",
     "express": "~4.14.1",
+    "mongodb": "^2.2.26",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2"
   },
@@ -19,7 +19,17 @@
   "main": "app.js",
   "devDependencies": {},
   "author": "Mohamed Othman",
-  "license": "ISC"
-,"engines": {
+  "license": "ISC",
+  "engines": {
     "node": "6.9.5"
-  }}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammad-othman/smart-manager.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/muhammad-othman/smart-manager/issues"
+  },
+  "homepage": "https://github.com/muhammad-othman/smart-manager#readme"
+}
