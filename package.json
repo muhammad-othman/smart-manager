@@ -19,4 +19,6 @@
   "devDependencies": {},
   "author": "Mohamed Othman",
   "license": "ISC"
-}
+}"engines": {
+    "node": "6.9.5"
+  }
