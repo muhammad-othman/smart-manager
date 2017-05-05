@@ -1,63 +1,55 @@
-var app = angular.module('SmartManager', ["ngRoute"])
-
-
-app.config(function($sceDelegateProvider) {
-  $sceDelegateProvider.resourceUrlWhitelist([
-   'self',
-   "http://" + window.location.host+"/**"
-  ]);
-});
-app.config(function ($routeProvider) {
+angular.module('SmartManager', ["ngRoute"]).config(function ($routeProvider) {
+    'use strict';
     $routeProvider.when("/Products", {
-        templateUrl: "http://" + window.location.host + "/views/Products.html",
+        templateUrl: "views/Products.html",
         controller: "ProductsController"
     }).when("/AddProducts", {
-        templateUrl: "http://" + window.location.host + "/views/AddProducts.html",
+        templateUrl: "views/AddProducts.html",
         controller: "AddProductsController"
     }).when("/UpdateProducts/:id", {
-        templateUrl: "http://" + window.location.host + "/views/UpdateProducts.html",
+        templateUrl: "views/UpdateProducts.html",
         controller: "UpdateProductsController"
     }).when("/ProductsCategories", {
-        templateUrl: "http://" + window.location.host + "/views/ProductsCategories.html",
+        templateUrl: "views/ProductsCategories.html",
         controller: "ProductsCategoriesController"
     }).when("/AddProductsCategories", {
-        templateUrl: "http://" + window.location.host + "/views/AddProductsCategories.html",
+        templateUrl: "views/AddProductsCategories.html",
         controller: "ProductsCategoriesController"
     }).when("/AddSellingBill", {
-        templateUrl: "http://" + window.location.host + "/views/AddSellingBill.html",
+        templateUrl: "views/AddSellingBill.html",
         controller: "SellingBillController"
     }).when("/Employees", {
-        templateUrl: "http://" + window.location.host + "/views/Employees.html",
+        templateUrl: "views/Employees.html",
         controller: "EmployeesController"
     }).when("/AddEmployees", {
-        templateUrl: "http://" + window.location.host + "/views/AddEmployees.html",
+        templateUrl: "views/AddEmployees.html",
         controller: "EmployeesController"
     }).when("/UpdateEmployee/:id", {
-        templateUrl: "http://" + window.location.host + "/views/UpdateEmployee.html",
+        templateUrl: "views/UpdateEmployee.html",
         controller: "UpdateEmployeesController"
     }).when("/UpdateCategory/:id", {
-        templateUrl: "http://" + window.location.host + "/views/UpdateProductsCategories.html",
+        templateUrl: "views/UpdateProductsCategories.html",
         controller: "UpdateCategoryController"
     }).when("/Users", {
-        templateUrl: "http://" + window.location.host + "/views/Users.html",
+        templateUrl: "views/Users.html",
         controller: "UsersController"
     }).when("/AddUsers", {
-        templateUrl: "http://" + window.location.host + "/views/AddUsers.html",
+        templateUrl: "views/AddUsers.html",
         controller: "AddUsersController"
     }).when("/UpdateUser/:id", {
-        templateUrl: "http://" + window.location.host + "/views/UpdateUsers.html",
+        templateUrl: "views/UpdateUsers.html",
         controller: "UpdateUsersController"
     }).when("/SellingBill", {
-        templateUrl: "http://" + window.location.host + "/views/SellingBill.html",
+        templateUrl: "views/SellingBill.html",
         controller:"SellingBillController"
     }).when("/BuyingBill", {
-        templateUrl: "http://" + window.location.host + "/views/BuyingBill.html",
+        templateUrl: "views/BuyingBill.html",
         controller: "BuyingBillController"
     }).when("/AddBuyingBill", {
-        templateUrl: "http://" + window.location.host + "/views/AddBuyingBill.html",
+        templateUrl: "views/AddBuyingBill.html",
         controller: "BuyingBillController"
     }).when("/Welcome", {
-        templateUrl: "http://" + window.location.host + "/views/Welcome.html"
+        templateUrl: "views/Welcome.html"
     });
     $routeProvider.otherwise({
         redirectTo: "Welcome"
